@@ -30,3 +30,5 @@ O AluraGeek permite adicionar e remover produtos da página de forma simples e i
 ### :earth_africa: Acesse o projeto live aqui:
 
 [AluraGeek - Vercel](https://alura-geek-one-sand.vercel.app/)
+
+Obs: o projeto só funciona completo online se configurar o json-server localmente.
