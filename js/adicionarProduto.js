@@ -15,6 +15,8 @@ async function adicionarProduto (evento) {
 
     alert("Produto adicionado com sucesso!");
 
+    window.location.reload();
+        
     } catch (e) {
         alert(e);
     }
