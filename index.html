@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+    </style>
+    <title>AluraGeek</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="/assets/logo.png" alt="Tês corações de pixel art">
+        <h3 class="cabecalho__titulo">AluraGeek</h3>
+    </header>
+    <main class="conteudo">
+        <section class="conteudo__produtos">
+            <h1 class="conteudo__titulo">Meus Produtos:</h1>
+            <section class="container__produtos-wrapper">
+                <div class="container__produtos" data-lista>
+                    <!--Sessão que vai dinamizar com JS - INÍCIO
+                    <div class="conteudo__produtos__card">
+                        <img src="https://www.zbrushcentral.com/uploads/default/original/4X/f/5/9/f59c90f247d5170c1d2538a48628969f06456a26.jpeg" alt="Imagem do produto" class="produtos_card_image">
+                        <div class="protudos__card__info">
+                            <p>Link Zonai - ToK</p>
+                            <div class="produtos__card__preco">
+                                <p>R$350</p>
+                                <img src="/assets/vector.png" class="delete-icon">
+                            </div>
+                        </div>
+                    </div> Sessão que vai dinamizar com JS - FIM-->
+                </div>
+            </section>
+        </section>
+        <section class="conteudo__formulario">
+            <h1 class="conteudo__titulo">Adicionar Produto:</h1>
+            <form class="formulario__principal" id="formulario" data-formulario>
+                <div class="formulario__principal__campo">
+                    <input name="nome" id="nome" class="campo__escrita" placeholder="Nome do produto..." data-nome/>
+                </div>
+                <div class="formulario__principal__campo">
+                    <input name="valor" id="valor" class="campo__escrita" placeholder="Valor..." data-valor/>
+                </div>
+                <div class="formulario__principal__campo">
+                    <input name="imagem" id="imagem" class="campo__escrita" placeholder="URL da imagem..." data-imagem/>
+                </div>
+                <div class="formulario__botao">
+                    <input type="submit" value="Adicionar" id="guardar">
+                    <input type="reset" value="Limpar" id="limpar">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="rodape">
+        <div class="rodape__logo">
+            <img src="/assets/logo.png" alt="Tês corações de pixel art">
+            <h3 class="rodape__logo__titulo">AluraGeek</h3>
+        </div>
+        <div>
+            <p class="rodape__texto__1">Desenvolvido por Dhara Castilho.</p>
+            <p class="rodape__texto__2">Alura Latam 2024</p>
+        </div>
+    </footer>
+    <script type="module" src="js/mostrarProdutos.js"></script>
+    <script type="module" src="js/adicionarProduto.js"></script>
+    <script type="module" src="js/removerProduto.js"></script>
+</body>
+</html>
