@@ -1,34 +1,65 @@
-# :video_game: AluraGeek :video_game:
+# AluraGeek - Product Management Project
 
-![imagem da tela inicial do projeto](https://github.com/dharitcha/alura-geek/assets/157736779/8828d862-ee11-478e-9b3a-0a3d8cc33880)
+## Overview
+AluraGeek was developed as part of the Frontend Challenge in the Alura and Oracle Next Education (ONE) program. The challenge required building a project from scratch based on a Figma design, implementing everything from HTML and CSS to advanced JavaScript functionalities.
 
-## :dart: Objetivos do projeto:
+## Features
+- **REST API Simulation:** Uses `json-server` to mock an API.
+- **CRUD Operations:** Supports GET, POST, and DELETE requests for managing products.
+- **Dynamic Rendering:** Products are dynamically displayed on the page.
+- **Event Handling:** Captures and processes form submissions.
+- **Modern Layout:** Designed using Flexbox, Grid, and Media Queries.
 
-O projeto AluraGeek foi parte do Challenge da formação de Front End do programa da Alura com a Oracle Next Education. O objetivo do desafio foi criar um projeto do zero, baseado somente no design do Figma disponível [aqui](https://www.figma.com/design/1zm3NNIw4KcI0RQtR6UmqK/New-AluraGeek---PT?node-id=0-1&t=iUzQ9s02o2hiVyaN-0), integrando desde o HTML e CSS até funções avançadas de JavaScript, incluindo:
+## Technologies Used
+- **HTML5**
+- **CSS3**
+- **JavaScript (ES6+)**
 
-- Simulação de API REST usando json-server;
-- Requisições GET, POST e DELETE;
-- Manipulação do DOM usando JavaScript;
-- Renderização de produtos de forma dinâmica;
-- Captura de eventos de formulários;
-- Uso de flexbox, grid e media queries.
+## How It Works
+### Adding Products
+- Users can add new products using a form.
+- Products are sent to the database via a POST request.
+- A success message is displayed upon successful addition.
 
-Aproveitei o tema geek e personalizei ele com cores diferentes, usando produtos inspirados em Zelda - Tears of The Kingdom (meu jogo preferido do momento) 🗡️
+### Displaying Products
+- The app fetches products from the database using a GET request.
+- Products are rendered dynamically within the product list.
+- If fetching fails, an error message is displayed.
 
+### Deleting Products
+- Each product has a delete icon.
+- Clicking the icon removes the product from the database via a DELETE request.
+- The UI updates immediately to reflect the changes.
 
-### :gear: Funcionalidades do projeto:
+## Installation and Usage
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-username/alura-geek.git
+   ```
+2. Navigate to the project folder:
+   ```sh
+   cd alura-geek
+   ```
+3. Install `json-server` globally if not installed:
+   ```sh
+   npm install -g json-server
+   ```
+4. Start the mock server:
+   ```sh
+   json-server --watch db.json --port 3000
+   ```
+5. Open `index.html` in your browser.
 
-O AluraGeek permite adicionar e remover produtos da página de forma simples e intuitiva! Com o uso do formulário, é possível adicionar qualquer produto que desejar na lista de produtos, podendo removê-los facilmente com a lixeira, sem precisar de acesso direto ao banco de dados. 
+## Future Improvements
+- Implement authentication for secure product management.
+- Enhance UI with animations and interactive elements.
+- Expand functionality with PUT requests for product updates.
 
+## Live Demo
+You can access the live version here: **[AluraGeek on Vercel](https://your-live-demo-link.com)**
 
-### :hammer_and_wrench: Tecnologias utilizadas:
-- HTML 5;
-- CSS;
-- JavaScript.
+⚠ **Note:** The project requires local `json-server` setup for full functionality.
 
+## License
+This project is open-source and available under the MIT License.
 
-### :earth_africa: Acesse o projeto live aqui:
-
-[AluraGeek - Vercel](https://alura-geek-one-sand.vercel.app/)
-
-Obs: o projeto só funciona completo online se configurar o json-server localmente.
