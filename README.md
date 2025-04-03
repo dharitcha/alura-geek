@@ -34,7 +34,7 @@ AluraGeek was developed as part of the Frontend Challenge in the Alura and Oracl
 ## Installation and Usage
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/alura-geek.git
+   git clone https://github.com/dharitcha/js-product-management-project.git
    ```
 2. Navigate to the project folder:
    ```sh
